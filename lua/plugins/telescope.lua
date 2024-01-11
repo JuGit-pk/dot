@@ -34,6 +34,7 @@ return {
       },
       extensions = {
         file_browser = {
+          initial_mode = "normal",
           path = "%:p:h",
           -- cwd = telescope_buffer_dir(),
           -- show hidden files
