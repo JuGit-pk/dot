@@ -60,17 +60,6 @@ return {
     },
   },
 
-  -- animations
-  {
-    "echasnovski/mini.animate",
-    event = "VeryLazy",
-    opts = function(_, opts)
-      opts.scroll = {
-        enable = false,
-      }
-    end,
-  },
-
   -- buffer line
   {
     "akinsho/bufferline.nvim",
@@ -137,10 +126,12 @@ return {
     "folke/zen-mode.nvim",
     cmd = "ZenMode",
     opts = {
+
+      theme = "hyper",
       plugins = {
         gitsigns = true,
         tmux = true,
-        kitty = { enabled = false, font = "+2" },
+        kitty = { enabled = false, font = "+4" },
       },
     },
     keys = { { "<leader>z", "<cmd>ZenMode<cr>", desc = "Zen Mode" } },
