@@ -10,9 +10,8 @@ keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
 keymap.set("n", "x", '"_x')
 
 -- Increment/decrement
-keymap.set("n", "+", "<C-a>")
-keymap.set("n", "-", "<C-x>")
-
+-- keymap.set("n", "+", ":inc<cr>", opts)
+-- keymap.set("n", "-", ":dec<cr>", opts)
 -- Delete a word backward
 keymap.set("n", "dw", 'vb"_d')
 
