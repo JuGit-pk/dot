@@ -18,6 +18,7 @@ return {
     telescope.setup({
       defaults = {
         path_display = { "truncate " },
+        path_display = { "truncate" },
         mappings = {
           i = {
             ["<C-k>"] = actions.move_selection_previous, -- move to prev result
@@ -33,6 +34,12 @@ return {
       },
       extensions = {
         file_browser = {
+          path = "%:p:h",
+          -- cwd = telescope_buffer_dir(),
+          -- show hidden files
+          hidden = true,
+          -- show hidden files even added in the ignore file i.e. .gitignore
+          no_ignore = true,
           -- disables netrw and use telescope-file-browser in its place
           hijack_netrw = true,
           wrap_results = true,
@@ -41,6 +48,9 @@ return {
           sorting_strategy = "ascending",
           winblend = 0,
           mappings = {
+            i = {
+              ["<esc>"] = require("telescope.actions").close,
+            },
             -- your custom insert mode mappings
             ["n"] = {
               -- your custom normal mode mappings
