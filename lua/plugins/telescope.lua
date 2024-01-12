@@ -16,8 +16,14 @@ return {
     local fb_actions = require("telescope").extensions.file_browser.actions
 
     telescope.setup({
+      pickers = {
+        -- find_files = {
+        --   hidden = true,
+        --   -- `hidden = true` will still show the inside of `.git/` as it's not `.gitignore`d.
+        --   find_command = { "rg", "--files", "--hidden", "--glob", "!**/.git/*" },
+        -- },
+      },
       defaults = {
-        path_display = { "truncate " },
         path_display = { "truncate" },
         mappings = {
           i = {
