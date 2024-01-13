@@ -1,3 +1,5 @@
+-- @desc : neo-tree is disabled and the nvim-tree was inspired from the jsean dot files, both i dont like
+-- i like the modal type file browser, inspired by japineese ytber
 --[[ local HEIGHT_RATIO = 0.8 -- You can change this
 local WIDTH_RATIO = 0.5 -- You can change this too ]]
 
